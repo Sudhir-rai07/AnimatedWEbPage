@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+}
+#back {
+  width: 100%;
+  height: 100vh;
+}
+#back img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#top {
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  max-width: 1920px;
+  height: 100vh;
+}
+
+#workingarea {
+  width: 80%;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+#nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+#nleft {
+  align-items: center;
+}
+
+#nright a {
+  text-decoration: none;
+  pointer-events: all;
+}
+
+#nright {
+  display: flex;
+  gap: 40px;
+}
+
+#hero {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#heroleft {
+  font-family: "Bebas Neue", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  min-width: 50%;
+}
+#heroleft #elem {
+  height: 7vw;
+  margin: 7px 0;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+}
+#heroleft #elem h2 {
+  font-size: 6vw;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#heroleft #elem h2:nth-child(1) {
+  top: 0;
+}
+#heroleft button {
+  font-size: 18px;
+  padding: 12px 30px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  pointer-events: all;
+}
+#heroright {
+  width: 25%;
+  /* background: green; */
+  text-align: right;
+}
+
+#box_image {
+  height: 150px;
+  background: url("https://cdn.pixabay.com/photo/2021/11/25/12/48/woman-6823526_1280.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#heroright p {
+  font-size: 13px;
+  margin: 10px 0;
+}
+#heroright p:last-child {
+  margin-top: 60px;
+}
